@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alat Konversi Temperatur</title>
-    <link rel="stylesheet" href="css/style.css">
+  <title>Kalkulator Suhu</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Alat Konversi Temperatur</h1>
-    </header>
-    <section class="InputSection">
-        <label for="InputField">Celcius</label>
-        <input type="number" id="InputField">
-        <div class="InputButtonSection">
-            <button>Konversi</button>
-            <button>Reset</button>
-            <button>Reverse</button>
-        </div>
-    </section>
-    
+  <h1>Kalkulator Suhu</h1>
+
+  <div class="container">
+    <div class="input-section">
+      <label for="celsius-input">Celsius (°C):</label>
+      <input type="number" id="celsius-input" placeholder="Masukkan nilai suhu">
+    </div>
+
+    <div class="buttons-section">
+      <button id="convert-btn">Konversi</button>
+      <button id="reset-btn">Reset</button>
+      <button id="reverse-btn">Reverse</button>
+    </div>
+
+    <div class="result-section">
+      <label for="fahrenheit-output">Fahrenheit (°F):</label>
+      <input type="text" id="fahrenheit-output" readonly>
+    </div>
+
+    <div class="calculation-section">
+      <p id="calculation-info">Cara kalkulasi:</p>
+      <p id="calculation-steps">(Cara mengkalkulasinya)</p>
+    </div>
+  </div>
+  
+  <script src="js/script.js"></script>
 </body>
 </html>
